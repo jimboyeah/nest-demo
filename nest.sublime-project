@@ -1,0 +1,105 @@
+{
+	"build_systems":
+	[
+		{
+			"encoding": "gbk",
+			"env":
+			{
+				"PATH": "c:/MinGW/bin/;%PATH%"
+			},
+			"file_regex": "^  (.+)\\((\\d+)\\)(): ((?:fatal )?(?:error|warning) \\w+\\d\\d\\d\\d: .*) \\[.*$",
+			"name": "🚩",
+			"quiet": true,
+			"shell_cmd": "git status",
+			"variants":
+			[
+				{
+					"name": "prebuild",
+					"shell_cmd": "npm run prebuild"
+				},
+				{
+					"name": "build",
+					"shell_cmd": "npm run build"
+				},
+				{
+					"name": "format",
+					"shell_cmd": "npm run format"
+				},
+				{
+					"name": "start",
+					"shell_cmd": "npm run start"
+				},
+				{
+					"name": "start:dev",
+					"shell_cmd": "npm run start:dev"
+				},
+				{
+					"name": "start:debug",
+					"shell_cmd": "npm run start:debug"
+				},
+				{
+					"name": "start:prod",
+					"shell_cmd": "npm run start:prod"
+				},
+				{
+					"name": "lint",
+					"shell_cmd": "npm run lint"
+				},
+				{
+					"name": "test",
+					"shell_cmd": "npm run test"
+				},
+				{
+					"name": "test:watch",
+					"shell_cmd": "npm run test:watch"
+				},
+				{
+					"name": "test:cov",
+					"shell_cmd": "npm run test:cov"
+				},
+				{
+					"name": "test:debug",
+					"shell_cmd": "npm run test:debug"
+				},
+				{
+					"name": "test:e2e",
+					"shell_cmd": "npm run test:e2e"
+				},
+				{
+					"name": "WebGL_Guide_Code",
+					"shell_cmd": "live-server C:/coding/md-code/WebGL_Guide_Code"
+				},
+				{
+					"name": "WebGL_Fundamentals",
+					"shell_cmd": "live-server C:/coding/md-code/WebGL_fundamentals"
+				},
+				{
+					"name": "Install Live Server",
+					"shell_cmd": "npm install -g live-server"
+				}
+			],
+			"working_dir": "${project_path}"
+		}
+	],
+	"folders":
+	[
+		{
+			"path": "."
+		},
+		{
+			"path": "C:\\coding\\md-code\\nest-master"
+		},
+		{
+			"path": "C:\\coding\\md-code\\nest-cli-master"
+		},
+		{
+			"path": "C:\\coding\\md-code\\nest-next-master"
+		},
+		{
+			"path": "C:\\coding\\md-code\\nest-next-module-demo-master"
+		},
+		{
+			"path": "C:\\coding\\md-code\\prisma-quickstart"
+		}
+	]
+}
